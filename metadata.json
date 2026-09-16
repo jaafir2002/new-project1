@@ -1,0 +1,6 @@
+{
+  "name": "Vexo - Luxury Indian Ethnic Atelier | Bespoke Handlooms",
+  "description": "Vexo Haute Atelier presents bespoke handcrafted Indian ethnic wear for royalty, weddings, and celebrations. Pure handloom silks, zardozi embroidery, and timeless luxury drapes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
