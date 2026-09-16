@@ -11,6 +11,16 @@ import tussarKurtaImg from '../assets/images/tussar_silk_kurta_1789566536230.jpg
 import tussarDetailImg from '../assets/images/tussar_kurta_detail_1789566549101.jpg';
 import chikankariKurtaMenImg from '../assets/images/chikankari_kurta_men_1789567011327.jpg';
 import chikankariKurtaDetailImg from '../assets/images/chikankari_emb_detail_1789567029250.jpg';
+import zeenatPeshwasGownImg from '../assets/images/zeenat_peshwas_gown_1789571810005.jpg';
+import peshwasZardoziDetailImg from '../assets/images/peshwas_zardozi_detail_1789571824926.jpg';
+import kanjivaramBridalSareeImg from '../assets/images/kanjivaram_bridal_saree_1789572133783.jpg';
+import gulabBridalLehengaImg from '../assets/images/gulab_bridal_lehenga_1789572164575.jpg';
+import chanderiGotaAnarkaliImg from '../assets/images/chanderi_gota_anarkali_1789572180453.jpg';
+import rawSilkBandhgalaMenImg from '../assets/images/raw_silk_bandhgala_men_1789572206790.jpg';
+import velvetSherwaniMenImg from '../assets/images/velvet_sherwani_men_1789572224815.jpg';
+import tussarKurtaMustardImg from '../assets/images/tussar_kurta_mustard_1789572244165.jpg';
+import amberNehruBundiImg from '../assets/images/amber_nehru_bundi_1789573057665.jpg';
+import amberBundiDetailImg from '../assets/images/amber_bundi_detail_1789573072433.jpg';
 
 export const PRODUCTS: Product[] = [
   // --- WOMEN'S ETHNIC WEAR ---
@@ -809,8 +819,8 @@ export const PRODUCTS: Product[] = [
     reviewCount: 19,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1518049362265-d5b2a6467637?auto=format&fit=crop&w=1000&q=85',
-      'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=85'
+      zeenatPeshwasGownImg,
+      peshwasZardoziDetailImg
     ],
     sizes: ['XS (34)', 'S (36)', 'M (38)', 'L (40)', 'XL (42)', 'Custom Made-to-Measure'],
     description: 'Inspired by the regal court attire of Awadh. This dramatic 32-panel kalidar peshwas gown features delicate floral trellises rendered in champagne micro-pearls, dabka coils, and antique copper salma along the ghera.',
@@ -923,8 +933,8 @@ export const PRODUCTS: Product[] = [
     reviewCount: 23,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1000&q=85',
-      'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=85'
+      amberNehruBundiImg,
+      amberBundiDetailImg
     ],
     sizes: ['38 (S)', '40 (M)', '42 (L)', '44 (XL)', '46 (XXL)'],
     description: 'A versatile ceremonial waistcoat handloomed in textured honey amber raw silk. Accented with subtle metallic floral motifs, a tailored mandarin collar, welt pockets, and real mother-of-pearl buttons.',
@@ -961,5 +971,356 @@ export const PRODUCTS: Product[] = [
         outfitBought: 'Amber Meenakari Brocade Nehru Bundi'
       }
     ]
+  },
+  // --- ADDITIONAL CURATED DRESSES FOR CORE SIGNATURE TYPES ---
+  // 1. Banarasi & Kanjivaram Sarees
+  {
+    id: 'vexo-w-09',
+    title: 'Kanjivaram Mayil Real Zari Bridal Silk Saree',
+    subtitle: 'Woven in vermillion red with Korvai pure gold zari temple borders',
+    gender: 'women',
+    category: 'sarees',
+    occasion: 'wedding',
+    fabric: 'Pure Mulberry Silk (Silk Mark Certified)',
+    weaveType: 'Interlocked Korvai Handloom Weave',
+    originRegion: 'Kanchipuram, Tamil Nadu',
+    weavesDays: 30,
+    price: 48500,
+    originalPrice: 56000,
+    badge: 'Silk Mark Certified',
+    rating: 4.9,
+    reviewCount: 37,
+    inStock: true,
+    images: [
+      kanjivaramBridalSareeImg,
+      kanchipuramDetailImg
+    ],
+    sizes: ['Free Size (6.2m including blouse piece)'],
+    description: 'A breathtaking South Indian bridal heirloom. Three-ply pure mulberry silk handwoven with authentic silver zari dipped in 24k molten gold. Features the sacred Mayil (peacock) motif and sharp temple spikes along the interlocking border.',
+    artisan: {
+      name: 'V. Sundaramurthy',
+      region: 'Pillayar Palayam, Kanchipuram',
+      generation: '3rd Generation Master Korvai Weaver',
+      experienceYears: 36,
+      specialty: 'Traditional Petni & Korvai Border Interlocking',
+      story: 'Two weavers sit opposite each other on the loom, guiding separate shuttles for hours to lock body and border perfectly together.',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80'
+    },
+    fabricDetails: [
+      '100% Certified Mulberry Silk with Government Silk Mark guarantee',
+      'Tested pure silver and gold electroplated zari threads',
+      'Heavy 850 grams heirloom silk weight ensuring majestic traditional fall',
+      'Unstitched contrast golden tissue brocade blouse piece included'
+    ],
+    craftTechnique: 'Pure pit-loom Korvai weaving requiring dual weavers and manual temple shuttle insertion.',
+    careInstructions: [
+      'Dry clean only by heritage saree specialists',
+      'Store wrapped in unbleached pure cotton muslin cloth',
+      'Air drape twice a year in shade; do not spray perfume directly'
+    ],
+    stylingTips: 'Pair with antique temple gold jewelry, fresh jasmine gajra in hair, and a classic round red bindi.',
+    reviews: [
+      {
+        id: 'r-19',
+        author: 'Meenakshi Ramanathan',
+        location: 'Chennai, Tamil Nadu',
+        rating: 5,
+        date: '1 week ago',
+        comment: 'Wore this for my Muhurtham ceremony. The weight, the luster of the pure gold zari, and the vivid vermillion silk received endless compliments from all our relatives.',
+        verified: true,
+        outfitBought: 'Kanjivaram Mayil Real Zari Bridal Silk Saree'
+      }
+    ]
+  },
+  // 2. Bridal Lehengas
+  {
+    id: 'vexo-w-10',
+    title: 'Gulab Shahi Heritage Velvet Bridal Lehenga',
+    subtitle: 'Crimson velvet with bullion zardozi, hand-cut sequins, and dabka flora',
+    gender: 'women',
+    category: 'lehengas',
+    occasion: 'wedding',
+    fabric: 'Pure Micro Velvet & Silk Brocade Ghera',
+    weaveType: 'Hand-Cut Kalidar with Bullion Zardozi',
+    originRegion: 'Old Delhi & Lucknow',
+    weavesDays: 45,
+    price: 92000,
+    originalPrice: 110000,
+    badge: 'Couture Bridal',
+    rating: 5.0,
+    reviewCount: 28,
+    inStock: true,
+    images: [
+      gulabBridalLehengaImg,
+      sherwaniZardoziDetailImg
+    ],
+    sizes: ['XS (34)', 'S (36)', 'M (38)', 'L (40)', 'XL (42)', 'Custom Made-to-Measure'],
+    description: 'An architectural masterpiece of bridal craftsmanship. 16 voluminous kalis hand-embroidered by three senior karigars using antique copper dabka, seed pearls, and real zardozi salma. Accented with double dupattas—one heavy velvet shoulder drape and one ethereal organza veil.',
+    artisan: {
+      name: 'Ustad Sharafat Ali',
+      region: 'Ballimaran, Chandni Chowk',
+      generation: '5th Generation Zardozi Master',
+      experienceYears: 42,
+      specialty: 'Imperial Mughal Bullion Zari & French Knots',
+      story: 'Bridal velvet must hold thousands of metallic stitches without puckering. It is a lifelong science of needle tension.',
+      avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80'
+    },
+    fabricDetails: [
+      'Pure heavy micro-velvet shell lined with soft silk satin',
+      'Dual dupatta set: 1 handloom velvet trail drape + 1 gossamer organza head veil',
+      'Full 5.5-meter circular flare with can-can structural petticoat',
+      'Includes padded blouse with deep square back and latkan cords'
+    ],
+    craftTechnique: 'Stretched karchob wooden frame hand zardozi with bullion wire and needle-tucked pearl beads.',
+    careInstructions: [
+      'Professional specialized wedding couture dry clean only',
+      'Store in provided cedarwood-lined luxury garment trunk'
+    ],
+    stylingTips: 'Style with uncut Polki diamond choker, emerald drop earrings, and a traditional matha patti.',
+    reviews: [
+      {
+        id: 'r-20',
+        author: 'Ananya Malhotra',
+        location: 'New Delhi',
+        rating: 5,
+        date: '2 weeks ago',
+        comment: 'Truly royal! The zardozi work has breathtaking depth and isn’t stiff. The double dupatta made walking down the aisle unforgettable.',
+        verified: true,
+        outfitBought: 'Gulab Shahi Heritage Velvet Bridal Lehenga'
+      }
+    ]
+  },
+  // 3. Chanderi Anarkalis
+  {
+    id: 'vexo-w-11',
+    title: 'Gota Patti Sage Green Chanderi Silk Anarkali',
+    subtitle: 'Hand-dyed sheer Chanderi silk with authentic Jaipur marodi gota embellishment',
+    gender: 'women',
+    category: 'anarkalis',
+    occasion: 'festive',
+    fabric: 'Pure Silk Cotton Handloom Chanderi',
+    weaveType: 'Handloom Eknal Weave with Gota Patti',
+    originRegion: 'Chanderi, Madhya Pradesh & Jaipur',
+    weavesDays: 16,
+    price: 24500,
+    originalPrice: 29000,
+    badge: 'Artisanal Guild',
+    rating: 4.8,
+    reviewCount: 31,
+    inStock: true,
+    images: [
+      chanderiGotaAnarkaliImg,
+      chanderiDetailImg
+    ],
+    sizes: ['XS (34)', 'S (36)', 'M (38)', 'L (40)', 'XL (42)', 'XXL (44)'],
+    description: 'Weightless poetry in motion. Woven from whisper-light translucent Chanderi silk yarn with delicate golden zari bootis throughout the 24-kali ghera. Adorned with heritage Jaipur Gota Patti ribbon work and mirror highlights along the hem.',
+    artisan: {
+      name: 'Mohini Devi & Group',
+      region: 'Pranpur Village, Chanderi',
+      generation: 'Women’s Handloom Weaving Collective',
+      experienceYears: 22,
+      specialty: 'Fine Count Silk Warp & Zari Extrusion',
+      story: 'Real Chanderi has a cool airy touch that breathes through humid monsoon festivities without losing its crisp grace.',
+      avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80'
+    },
+    fabricDetails: [
+      'Original Chanderi silk-cotton yarn with characteristic sheer translucence',
+      'Real hammered silver-gilt ribbon (Gota Patti) stitched by hand',
+      'Includes 2.6m gossamer Chanderi dupatta with kiran fringe borders',
+      'Tonal churidar in soft cotton silk with snug ankle stretch'
+    ],
+    craftTechnique: 'Pit loom weaving with hand-pinched and appliquéd metallic Gota ribbons.',
+    careInstructions: [
+      'Dry clean only',
+      'Store folded in tissue inside breathable garment cover'
+    ],
+    stylingTips: 'Pair with antique chaandbali earrings and gold mojaris for Mehendi celebrations or day wedding rituals.',
+    reviews: [
+      {
+        id: 'r-21',
+        author: 'Rhea Sen',
+        location: 'Kolkata, West Bengal',
+        rating: 5,
+        date: '3 weeks ago',
+        comment: 'So soft and feather-light! The sage green shade with gold gota borders looks very regal in daytime photographs.',
+        verified: true,
+        outfitBought: 'Gota Patti Sage Green Chanderi Silk Anarkali'
+      }
+    ]
+  },
+  // 4. Raw Silk Bandhgalas
+  {
+    id: 'vexo-m-11',
+    title: 'Midnight Royal Matka Raw Silk Bandhgala',
+    subtitle: 'Bespoke Jodhpuri cut in slub-textured raw silk with antique brass crest buttons',
+    gender: 'men',
+    category: 'bandhgalas',
+    occasion: 'festive',
+    fabric: '100% Handspun Matka Raw Silk',
+    weaveType: 'Textured Slub Weft Handloom',
+    originRegion: 'Murshidabad & Jodhpur',
+    weavesDays: 18,
+    price: 31000,
+    originalPrice: 36500,
+    badge: 'Master Tailored',
+    rating: 4.9,
+    reviewCount: 34,
+    inStock: true,
+    images: [
+      rawSilkBandhgalaMenImg,
+      tussarDetailImg
+    ],
+    sizes: ['38 (S)', '40 (M)', '42 (L)', '44 (XL)', '46 (XXL)', 'Custom Bespoke'],
+    description: 'The pinnacle of masculine royalty. Handspun from indigenous Matka raw silk characterized by its rich, uneven textural slub and matte sheen. Tailored with a sharp high mandarin collar, canvassed chest construction, and custom hand-engraved regal lion crest buttons.',
+    artisan: {
+      name: 'Master Tailor Narendra Singh',
+      region: 'Jodhpur, Rajasthan',
+      generation: 'Royal Bespoke Atelier',
+      experienceYears: 31,
+      specialty: 'Hand-Canvassed Structured Bandhgalas',
+      story: 'A Bandhgala must sit like armor yet move like silk. We hand-stitch the floating chest canvas so it molds to the body over time.',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80'
+    },
+    fabricDetails: [
+      'Pure organic Matka raw silk from West Bengal handlooms',
+      'Floating horsehair canvas interlining for sharp shoulder structure',
+      'Hand-cast brass shank buttons with vintage royal coat of arms',
+      'Complete with bespoke tailored midnight charcoal trousers'
+    ],
+    craftTechnique: 'Savile Row inspired hand-canvassed tailoring applied to handloom Indian raw silk.',
+    careInstructions: [
+      'Dry clean only',
+      'Always hang on shaped broad wooden hanger to preserve shoulder pad form'
+    ],
+    stylingTips: 'Pair with an antique pocket watch or enameled pocket square, paired with polished oxford shoes for formal sangeets.',
+    reviews: [
+      {
+        id: 'r-22',
+        author: 'Vikramaditya Rao',
+        location: 'Jaipur, Rajasthan',
+        rating: 5,
+        date: '2 weeks ago',
+        comment: 'Exceptional tailoring! The raw silk slub has incredible texture and the midnight navy shade looks commanding.',
+        verified: true,
+        outfitBought: 'Midnight Royal Matka Raw Silk Bandhgala'
+      }
+    ]
+  },
+  // 5. Velvet Sherwanis
+  {
+    id: 'vexo-m-12',
+    title: 'Emerald Crown Zardozi Royal Velvet Sherwani',
+    subtitle: 'Deep emerald micro-velvet with bullion gold threadwork, paired with ivory stole',
+    gender: 'men',
+    category: 'sherwanis',
+    occasion: 'wedding',
+    fabric: 'Imperial Silk Micro Velvet & Raw Silk Churidar',
+    weaveType: 'Needle Bullion & Dabka Zardozi',
+    originRegion: 'Awadh & Varanasi',
+    weavesDays: 38,
+    price: 68000,
+    originalPrice: 82000,
+    badge: 'Royal Heirloom',
+    rating: 5.0,
+    reviewCount: 24,
+    inStock: true,
+    images: [
+      velvetSherwaniMenImg,
+      sherwaniZardoziDetailImg
+    ],
+    sizes: ['38 (S)', '40 (M)', '42 (L)', '44 (XL)', '46 (XXL)', 'Custom Made-to-Measure'],
+    description: 'Bespoke regal groom attire. Crafted in rare deep emerald green imperial micro-velvet that absorbs and reflects ambient lights with subtle richness. Hand-embroidered along the placket, mandarin collar, and cuffs with antique gold bullion zardozi and kundan crystals.',
+    artisan: {
+      name: 'Mohammad Rais Ansari',
+      region: 'Madanpura, Varanasi',
+      generation: '4th Generation Weaver & Karigar',
+      experienceYears: 34,
+      specialty: 'Royal Sherwani Zari and Brocade Stoles',
+      story: 'A groom’s sherwani is the crown of the family on his wedding day. Every button loop is hand-rolled and anchored.',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80'
+    },
+    fabricDetails: [
+      'Pure dense micro-velvet with rich jewel-toned luster',
+      'Hand-crafted gold plated brooch & antique metallic buttons included',
+      'Accompanied by a 2.75m pure woven tissue ivory and gold stole',
+      'Tailored matching raw silk churidar trousers with buttoned calf hem'
+    ],
+    craftTechnique: 'Imperial Awadhi zardozi with raised metallic coils and seed crystal setting.',
+    careInstructions: [
+      'Specialist dry clean only',
+      'Never press directly on velvet pile; steam from reverse side only'
+    ],
+    stylingTips: 'Wear with a multi-strand pearl kantha necklace, matching emerald safa turban, and velvet juttis.',
+    reviews: [
+      {
+        id: 'r-23',
+        author: 'Arjun Singhania',
+        location: 'Mumbai, Maharashtra',
+        rating: 5,
+        date: '1 week ago',
+        comment: 'Ordered this for my royal palace wedding in Udaipur. The velvet quality and bullion embroidery made me feel like an emperor.',
+        verified: true,
+        outfitBought: 'Emerald Crown Zardozi Royal Velvet Sherwani'
+      }
+    ]
+  },
+  // 6. Tussar Kurta Sets
+  {
+    id: 'vexo-m-13',
+    title: 'Mustard Amber Wild Tussar Silk Kurta Set',
+    subtitle: 'Handloomed Bhagalpur tussar silk with tonal kantha placket and dhoti trousers',
+    gender: 'men',
+    category: 'kurta-sets',
+    occasion: 'festive',
+    fabric: '100% Pure Organic Wild Tussar Silk Handloom',
+    weaveType: 'Natural Handloom Slub Weave',
+    originRegion: 'Bhagalpur, Bihar',
+    weavesDays: 14,
+    price: 14800,
+    originalPrice: 17500,
+    badge: 'Artisanal Guild',
+    rating: 4.8,
+    reviewCount: 29,
+    inStock: true,
+    images: [
+      tussarKurtaMustardImg,
+      tussarDetailImg
+    ],
+    sizes: ['38 (S)', '40 (M)', '42 (L)', '44 (XL)', '46 (XXL)'],
+    description: 'Celebrated for its rustic texture and golden glow. Woven from indigenous wild tussar silk cocoons in Bhagalpur. Hand-stitched with geometric Kantha needlework on the collar and hidden button placket, keeping the aesthetic minimal and heritage-rich.',
+    artisan: {
+      name: 'Rameshwar Tanti',
+      region: 'Champanagar, Bhagalpur',
+      generation: '3rd Generation Tussar Silk Weaver',
+      experienceYears: 27,
+      specialty: 'Organic Wild Silk Spinning & Slub Weaving',
+      story: 'Tussar silk breathes with the weather. It keeps you cool during day rituals and comfortably warm under the evening sky.',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80'
+    },
+    fabricDetails: [
+      '100% Wild Tussar Silk Handloom certified under Handloom Mark',
+      'Naturally rich mustard amber dye extracted from marigold and turmeric',
+      'Includes tailored off-white raw silk blend dhoti trousers',
+      'Concealed placket with natural shell buttons'
+    ],
+    craftTechnique: 'Manual hand-reeled tussar yarn woven on traditional pit looms with Kantha needlework.',
+    careInstructions: [
+      'Dry clean recommended; or gentle hand wash in cold water with silk detergent',
+      'Dry in shade; warm iron on reverse'
+    ],
+    stylingTips: 'Pair with tan leather kolhapuris or mojris and a woven silk pocket square for festive rituals and Haldi functions.',
+    reviews: [
+      {
+        id: 'r-24',
+        author: 'Kunal Deshmukh',
+        location: 'Pune, Maharashtra',
+        rating: 5,
+        date: '4 days ago',
+        comment: 'Incredible texture and natural drape! The mustard shade has a warm golden undertone that looks extraordinary in daylight.',
+        verified: true,
+        outfitBought: 'Mustard Amber Wild Tussar Silk Kurta Set'
+      }
+    ]
   }
 ];
+
