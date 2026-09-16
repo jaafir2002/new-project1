@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Product, Review, Currency } from '../types';
-import { formatCurrency } from '../utils/currency';
+import { formatPrice } from '../utils/currency';
 
 interface ReviewsPageProps {
   products: Product[];
@@ -512,7 +512,7 @@ export const ReviewsPage: React.FC<ReviewsPageProps> = ({
                     >
                       {products.map((p) => (
                         <option key={p.id} value={p.id}>
-                          {p.title} — ({formatCurrency(p.price, currency)})
+                          {p.title} — ({formatPrice(p.price, currency)})
                         </option>
                       ))}
                     </select>

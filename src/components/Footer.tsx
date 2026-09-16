@@ -7,9 +7,10 @@ interface FooterProps {
   onSelectGender: (g: Gender) => void;
   onOpenStory: () => void;
   onOpenFabricGuide: () => void;
+  onOpenReviews?: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onSelectGender, onOpenStory, onOpenFabricGuide }) => {
+export const Footer: React.FC<FooterProps> = ({ onSelectGender, onOpenStory, onOpenFabricGuide, onOpenReviews }) => {
   const [subscribed, setSubscribed] = useState(false);
   const [emailInput, setEmailInput] = useState('');
 
@@ -167,6 +168,13 @@ export const Footer: React.FC<FooterProps> = ({ onSelectGender, onOpenStory, onO
                   Silk Mark & 24K Zari Authenticity Guide
                 </button>
               </li>
+              {onOpenReviews && (
+                <li>
+                  <button onClick={onOpenReviews} className="text-[#C89D56] hover:text-[#F3DC9B] font-medium transition-colors cursor-pointer">
+                    ★ Client Chronicles & Reviews
+                  </button>
+                </li>
+              )}
               <li>
                 <span className="text-[#8C7A6B]">Weaving Looms: Varanasi, Chanderi, Kanchipuram, Awadh, Bhagalpur</span>
               </li>

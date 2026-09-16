@@ -14,6 +14,7 @@ import { SearchModal } from './components/SearchModal';
 import { BrandStorySection } from './components/BrandStorySection';
 import { FabricGuideModal } from './components/FabricGuideModal';
 import { MobileBottomNav } from './components/MobileBottomNav';
+import { ReviewsPage } from './components/ReviewsPage';
 import { Footer } from './components/Footer';
 import { Sparkles } from 'lucide-react';
 
@@ -73,6 +74,7 @@ export default function App() {
   const [isWishlistOpen, setIsWishlistOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isFabricGuideOpen, setIsFabricGuideOpen] = useState(false);
+  const [isReviewsOpen, setIsReviewsOpen] = useState(false);
   const [confirmedOrder, setConfirmedOrder] = useState<OrderConfirmation | null>(null);
 
   // --- FILTERED PRODUCTS CALCULATION ---
@@ -268,78 +270,100 @@ export default function App() {
         onOpenMasterKarigars={handleOpenMasterKarigars}
       />
 
-      {/* 2. Hero Banner with Authentic Photography & Human Story */}
-      <HeroBanner
-        onSelectGender={setActiveGender}
-        onOpenStory={handleOpenStory}
-      />
+      {/* Conditional View: Reviews Page vs Main Atelier Catalog */}
+      {isReviewsOpen ? (
+        <ReviewsPage
+          products={PRODUCTS}
+          currency={currency}
+          onSelectProduct={(product) => setSelectedProduct(product)}
+          onBackToAtelier={() => {
+            setIsReviewsOpen(false);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+        />
+      ) : (
+        <>
+          {/* 2. Hero Banner with Authentic Photography & Human Story */}
+          <HeroBanner
+            onSelectGender={setActiveGender}
+            onOpenStory={handleOpenStory}
+          />
 
-      {/* 3. Catalog Filter & Realm Controller */}
-      <FilterBar
-        activeGender={activeGender}
-        onSelectGender={setActiveGender}
-        activeCategory={activeCategory}
-        onSelectCategory={setActiveCategory}
-        activeOccasion={activeOccasion}
-        onSelectOccasion={setActiveOccasion}
-        activeFabric={activeFabric}
-        onSelectFabric={setActiveFabric}
-        sortBy={sortBy}
-        onSelectSortBy={setSortBy}
-        searchQuery={searchQuery}
-        onClearSearch={() => setSearchQuery('')}
-        totalCount={filteredProducts.length}
-      />
+          {/* 3. Catalog Filter & Realm Controller */}
+          <FilterBar
+            activeGender={activeGender}
+            onSelectGender={setActiveGender}
+            activeCategory={activeCategory}
+            onSelectCategory={setActiveCategory}
+            activeOccasion={activeOccasion}
+            onSelectOccasion={setActiveOccasion}
+            activeFabric={activeFabric}
+            onSelectFabric={setActiveFabric}
+            sortBy={sortBy}
+            onSelectSortBy={setSortBy}
+            searchQuery={searchQuery}
+            onClearSearch={() => setSearchQuery('')}
+            totalCount={filteredProducts.length}
+          />
 
-      {/* 4. Main Product Catalog Grid */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-1 w-full">
-        {filteredProducts.length === 0 ? (
-          <div className="py-20 text-center space-y-4 max-w-md mx-auto">
-            <div className="w-16 h-16 rounded-full bg-[#F4EFEA] border border-[#E7DFD5] flex items-center justify-center mx-auto text-[#8E2827]">
-              <Sparkles className="w-8 h-8" />
-            </div>
-            <h3 className="font-serif text-2xl font-bold text-[#241E1C]">No Handlooms Found</h3>
-            <p className="text-xs text-[#78695E] leading-relaxed">
-              We couldn’t find any garments matching your current filter criteria. Our weavers are constantly adding fresh pieces from the loom.
-            </p>
-            <button
-              onClick={() => {
-                setActiveGender('all');
-                setActiveCategory('all');
-                setActiveOccasion('all');
-                setActiveFabric('all');
-                setSearchQuery('');
-              }}
-              className="px-6 py-2.5 rounded-xl bg-[#8E2827] text-white text-xs font-semibold hover:bg-[#782221] transition-colors"
-            >
-              Reset All Filters
-            </button>
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {filteredProducts.map((product) => (
-              <ProductCard
-                key={product.id}
-                product={product}
-                currency={currency}
-                isWishlisted={wishlistIds.includes(product.id)}
-                onToggleWishlist={handleToggleWishlist}
-                onSelectProduct={setSelectedProduct}
-                onQuickAdd={handleQuickAdd}
-              />
-            ))}
-          </div>
-        )}
-      </main>
+          {/* 4. Main Product Catalog Grid */}
+          <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-1 w-full">
+            {filteredProducts.length === 0 ? (
+              <div className="py-20 text-center space-y-4 max-w-md mx-auto">
+                <div className="w-16 h-16 rounded-full bg-[#F4EFEA] border border-[#E7DFD5] flex items-center justify-center mx-auto text-[#8E2827]">
+                  <Sparkles className="w-8 h-8" />
+                </div>
+                <h3 className="font-serif text-2xl font-bold text-[#241E1C]">No Handlooms Found</h3>
+                <p className="text-xs text-[#78695E] leading-relaxed">
+                  We couldn’t find any garments matching your current filter criteria. Our weavers are constantly adding fresh pieces from the loom.
+                </p>
+                <button
+                  onClick={() => {
+                    setActiveGender('all');
+                    setActiveCategory('all');
+                    setActiveOccasion('all');
+                    setActiveFabric('all');
+                    setSearchQuery('');
+                  }}
+                  className="px-6 py-2.5 rounded-xl bg-[#8E2827] text-white text-xs font-semibold hover:bg-[#782221] transition-colors"
+                >
+                  Reset All Filters
+                </button>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                {filteredProducts.map((product) => (
+                  <ProductCard
+                    key={product.id}
+                    product={product}
+                    currency={currency}
+                    isWishlisted={wishlistIds.includes(product.id)}
+                    onToggleWishlist={handleToggleWishlist}
+                    onSelectProduct={setSelectedProduct}
+                    onQuickAdd={handleQuickAdd}
+                  />
+                ))}
+              </div>
+            )}
+          </main>
 
-      {/* 5. Brand Storytelling Section (The Living Handloom & Artisans) */}
-      <BrandStorySection />
+          {/* 5. Brand Storytelling Section (The Living Handloom & Artisans) */}
+          <BrandStorySection />
+        </>
+      )}
 
       {/* 6. Footer */}
       <Footer
-        onSelectGender={setActiveGender}
+        onSelectGender={(g) => {
+          setIsReviewsOpen(false);
+          setActiveGender(g);
+        }}
         onOpenStory={handleOpenStory}
         onOpenFabricGuide={() => setIsFabricGuideOpen(true)}
+        onOpenReviews={() => {
+          setIsReviewsOpen(true);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
       />
 
       {/* 7. Mobile Bottom Navigation Bar (Sticky Thumb-friendly) */}
@@ -347,11 +371,18 @@ export default function App() {
         cartCount={cartItems.reduce((sum, item) => sum + item.quantity, 0)}
         wishlistCount={wishlistIds.length}
         activeGender={activeGender}
-        onSelectGender={setActiveGender}
+        onSelectGender={(g) => {
+          setIsReviewsOpen(false);
+          setActiveGender(g);
+        }}
         onOpenSearch={() => setIsSearchOpen(true)}
         onOpenWishlist={() => setIsWishlistOpen(true)}
         onOpenCart={() => setIsCartOpen(true)}
         onOpenStory={handleOpenStory}
+        onOpenReviews={() => {
+          setIsReviewsOpen((prev) => !prev);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
       />
 
       {/* 8. Garment Detail Modal */}

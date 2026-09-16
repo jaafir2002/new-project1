@@ -197,7 +197,7 @@ export const Header: React.FC<HeaderProps> = ({
               <span>Weaver Guilds</span>
             </button>
 
-            <span className="text-[#C89D56]/30 hidden md:inline">|</span>
+            <span className="text-[#C89D56]/30 hidden sm:inline">|</span>
 
             <span className="text-[10px] uppercase tracking-[0.12em] text-[#C5B7A8] font-medium hidden lg:inline">
               ✈ Worldwide White-Glove

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Compass, Search, Heart, ShoppingBag } from 'lucide-react';
+import { Home, Compass, Star, Search, Heart, ShoppingBag } from 'lucide-react';
 import { Gender } from '../types';
 
 interface MobileBottomNavProps {
@@ -11,6 +11,7 @@ interface MobileBottomNavProps {
   onOpenWishlist: () => void;
   onOpenCart: () => void;
   onOpenStory: () => void;
+  onOpenReviews?: () => void;
 }
 
 export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({
@@ -20,7 +21,8 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({
   onOpenSearch,
   onOpenWishlist,
   onOpenCart,
-  onOpenStory
+  onOpenStory,
+  onOpenReviews
 }) => {
   return (
     <nav 
@@ -48,6 +50,17 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({
           <Compass className="w-5 h-5" />
           <span className="text-[10px] font-medium tracking-tight mt-0.5">Weavers</span>
         </button>
+
+        {/* Client Reviews */}
+        {onOpenReviews && (
+          <button
+            onClick={onOpenReviews}
+            className="flex flex-col items-center justify-center p-1.5 text-[#4A3E39] hover:text-[#C89D56] transition-colors focus:outline-none"
+          >
+            <Star className="w-5 h-5" />
+            <span className="text-[10px] font-medium tracking-tight mt-0.5">Reviews</span>
+          </button>
+        )}
 
         {/* Quick Search */}
         <button

@@ -7,6 +7,10 @@ import kanchipuramSareeImg from '../assets/images/kanchipuram_silk_saree_1789489
 import kanchipuramDetailImg from '../assets/images/kanchipuram_border_detail_1789489920275.jpg';
 import groomVelvetSherwaniImg from '../assets/images/groom_velvet_sherwani_1789490585387.jpg';
 import sherwaniZardoziDetailImg from '../assets/images/sherwani_zardozi_detail_1789490602076.jpg';
+import tussarKurtaImg from '../assets/images/tussar_silk_kurta_1789566536230.jpg';
+import tussarDetailImg from '../assets/images/tussar_kurta_detail_1789566549101.jpg';
+import chikankariKurtaMenImg from '../assets/images/chikankari_kurta_men_1789567011327.jpg';
+import chikankariKurtaDetailImg from '../assets/images/chikankari_emb_detail_1789567029250.jpg';
 
 export const PRODUCTS: Product[] = [
   // --- WOMEN'S ETHNIC WEAR ---
@@ -518,8 +522,8 @@ export const PRODUCTS: Product[] = [
     reviewCount: 34,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1000&q=85',
-      'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=85'
+      tussarKurtaImg,
+      tussarDetailImg
     ],
     sizes: ['38 (S)', '40 (M)', '42 (L)', '44 (XL)', '46 (XXL)'],
     description: 'Renowned as Bhagalpur’s golden thread. Wild Tussar silk is naturally breathable, cool in daytime rituals and insulating as evening sets in. Features a minimalist Mandarin collar accented with hand-run Kantha stitch running down the placket.',
@@ -633,8 +637,8 @@ export const PRODUCTS: Product[] = [
     reviewCount: 39,
     inStock: true,
     images: [
-      'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1000&q=85',
-      'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=85'
+      chikankariKurtaMenImg,
+      chikankariKurtaDetailImg
     ],
     sizes: ['38 (S)', '40 (M)', '42 (L)', '44 (XL)', '46 (XXL)'],
     description: 'Pure effortless elegance. Crafted from whisper-light Mulmul cotton, adorned with classic Lucknowi Chikankari needlework along the placket, collar, and sleeve cuffs. Built for balmy Indian summers, temple visits, and relaxed Sunday brunches.',
@@ -727,6 +731,234 @@ export const PRODUCTS: Product[] = [
         comment: 'Wore this for my engagement party. The asymmetrical cut is clean and sharp. Everyone asked where I had it custom tailored!',
         verified: true,
         outfitBought: 'Indo-Western Silk Achkan with Asymmetrical Placket'
+      }
+    ]
+  },
+  {
+    id: 'vexo-w-07',
+    title: 'Gulmarg Meenakari Katan Silk Saree',
+    subtitle: 'Hand-dyed in rani pink with five-color resham flora & antique gold zari',
+    gender: 'women',
+    category: 'sarees',
+    occasion: 'wedding',
+    fabric: 'Pure Mulberry Katan Silk',
+    weaveType: 'Meenakari Kadwa Pit-Loom',
+    originRegion: 'Varanasi, Uttar Pradesh',
+    weavesDays: 38,
+    price: 38500,
+    originalPrice: 46000,
+    badge: 'Masterpiece Handloom',
+    rating: 4.9,
+    reviewCount: 28,
+    inStock: true,
+    images: [
+      'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=85',
+      'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=85'
+    ],
+    sizes: ['Free Size (Includes 1m Unstitched Blouse Piece)', 'Custom Tailored Blouse'],
+    description: 'A botanical symphony woven across 38 intense days on a heritage wooden pit-loom. Features five-colored spun silk threads embedded into gold zari bouquets using the ancient Persian Meenakari technique revived in Varanasi.',
+    artisan: {
+      name: 'Mohammad Rais Ansari',
+      region: 'Madanpura, Varanasi',
+      generation: '4th Generation Weaver',
+      experienceYears: 34,
+      specialty: 'Kadwa Meenakari & Dual-Tone Zari Weave',
+      story: 'Each flower is shaded by hand-swapping miniature colored spools in the loom weft.',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80'
+    },
+    fabricDetails: [
+      'Government Silk Mark Certified 100% Pure Katan Mulberry Silk',
+      'Tested pure silver electroplated antique gold zari border',
+      'Elaborate peacock and lotus medallion pallu drape',
+      'Dense Kadwa body without floating threads on reverse'
+    ],
+    craftTechnique: 'Authentic Handloom Kadwa Meenakari with zero mechanical intervention.',
+    careInstructions: [
+      'Dry clean only by certified handloom silk specialists',
+      'Wrap in pure muslin cloth and store away from dampness'
+    ],
+    stylingTips: 'Pair with heritage Jadau polki choker and fresh tuberoses pinned into an elegant low bun.',
+    reviews: [
+      {
+        id: 'r-15',
+        author: 'Suniti Mathur',
+        location: 'Jaipur, Rajasthan',
+        rating: 5,
+        date: '2 weeks ago',
+        comment: 'The five colors in the flowers shine like real enameling. This is true museum quality craft.',
+        verified: true,
+        outfitBought: 'Gulmarg Meenakari Katan Silk Saree'
+      }
+    ]
+  },
+  {
+    id: 'vexo-w-08',
+    title: 'Zeenat Awadhi Kalidar Peshwas Gown',
+    subtitle: 'Floor-length pure silk organza with hand zardozi and pearl marori work',
+    gender: 'women',
+    category: 'anarkalis',
+    occasion: 'festive',
+    fabric: 'Pure Silk Organza & Bemberg Satin',
+    weaveType: '32-Kali Flare Hand Cut & Embroidered',
+    originRegion: 'Lucknow, Uttar Pradesh',
+    weavesDays: 24,
+    price: 36000,
+    originalPrice: 42500,
+    badge: 'Royal Heirloom',
+    rating: 4.8,
+    reviewCount: 19,
+    inStock: true,
+    images: [
+      'https://images.unsplash.com/photo-1518049362265-d5b2a6467637?auto=format&fit=crop&w=1000&q=85',
+      'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=85'
+    ],
+    sizes: ['XS (34)', 'S (36)', 'M (38)', 'L (40)', 'XL (42)', 'Custom Made-to-Measure'],
+    description: 'Inspired by the regal court attire of Awadh. This dramatic 32-panel kalidar peshwas gown features delicate floral trellises rendered in champagne micro-pearls, dabka coils, and antique copper salma along the ghera.',
+    artisan: {
+      name: 'Begum Shabana Bano',
+      region: 'Kakori, Lucknow',
+      generation: '4th Generation Zardozi Master',
+      experienceYears: 28,
+      specialty: 'Marori & Seed-Pearl Needle Embroidery',
+      story: 'The 32 panels flow like mist when the wearer spins. It takes two craftswomen 18 days just for the neckline borders.',
+      avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80'
+    },
+    fabricDetails: [
+      'Pure Silk Sheer Organza over unblemished Bemberg satin lining',
+      'Hand-sewn micro seed pearls and French knot resham threads',
+      'Includes 2.75m scalloped organza dupatta with zardozi borders',
+      'Matching tailored pure churidar trousers with cuff pearl buttons'
+    ],
+    craftTechnique: 'Adda frame tambour embroidery and hand-pleated kalidar construction.',
+    careInstructions: [
+      'Delicate dry clean only',
+      'Never spray perfumes directly on metallic threadwork'
+    ],
+    stylingTips: 'Style with antique pearls, a delicate passa in hair, and subtle nude-rose makeup.',
+    reviews: [
+      {
+        id: 'r-16',
+        author: 'Dr. Fatima Rizvi',
+        location: 'Hyderabad, Telangana',
+        rating: 5,
+        date: '3 weeks ago',
+        comment: 'The flair of the 32 kalis is breathtaking when walking into a ballroom. Truly regal craftsmanship.',
+        verified: true,
+        outfitBought: 'Zeenat Awadhi Kalidar Peshwas Gown'
+      }
+    ]
+  },
+  {
+    id: 'vexo-m-07',
+    title: 'Badshahi Zari Jamawar Groom Sherwani',
+    subtitle: 'Woven in pure ivory and champagne gold silk brocade with antique buttons',
+    gender: 'men',
+    category: 'sherwanis',
+    occasion: 'wedding',
+    fabric: 'Pure Mulberry Silk Jamawar Brocade',
+    weaveType: 'Brocade Jaal Hand Weave',
+    originRegion: 'Varanasi, Uttar Pradesh',
+    weavesDays: 35,
+    price: 48000,
+    originalPrice: 58000,
+    badge: 'Groom Edition',
+    rating: 5.0,
+    reviewCount: 31,
+    inStock: true,
+    images: [
+      'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=85',
+      'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1000&q=85'
+    ],
+    sizes: ['38 (S)', '40 (M)', '42 (L)', '44 (XL)', '46 (XXL)', 'Custom Bespoke Tailoring'],
+    description: 'An emperor’s silhouette tailored from heavyweight handloomed Jamawar silk. The fabric is woven on specialized Jacquard pit-looms with thousands of punch cards forming an uninterrupted royal shikargah and paisley jaal in subtle champagne gold.',
+    artisan: {
+      name: 'Master Cutter Farooq Mirza',
+      region: 'Nizamuddin, New Delhi',
+      generation: 'Bespoke Tailoring Master',
+      experienceYears: 27,
+      specialty: 'Hand-canvassed chest structure & heirloom sherwanis',
+      story: 'We use full-floating horsehair canvas interlining so the sherwani moulds naturally to the groom’s posture.',
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80'
+    },
+    fabricDetails: [
+      '100% Handloom Mulberry Silk Jamawar with spun silver-gold zari',
+      'Full floating horsehair canvas for structural crease resistance',
+      'Handcrafted antique brass buttons with meenakari detailing',
+      'Includes tailored cotton-silk churidar and matching pocket square'
+    ],
+    craftTechnique: 'Master handloom brocade weaving with bespoke Savile Row-inspired canvas construction.',
+    careInstructions: [
+      'Strictly dry clean only',
+      'Store on wide-shoulder wooden hanger in breathable garment bag'
+    ],
+    stylingTips: 'Drape with an emerald safa and a multi-strand Basra pearl mala for the royal wedding entry.',
+    reviews: [
+      {
+        id: 'r-17',
+        author: 'Arjun Vikramaditya',
+        location: 'New Delhi',
+        rating: 5,
+        date: '1 month ago',
+        comment: 'The sherwani fit me like a second skin. It felt grand without being heavy or rigid. Complete royal look.',
+        verified: true,
+        outfitBought: 'Badshahi Zari Jamawar Groom Sherwani'
+      }
+    ]
+  },
+  {
+    id: 'vexo-m-08',
+    title: 'Amber Meenakari Brocade Nehru Bundi',
+    subtitle: 'Woven in honey amber raw silk with antique floral buttis and silk pocket square',
+    gender: 'men',
+    category: 'nehru-jackets',
+    occasion: 'festive',
+    fabric: 'Matka Raw Silk Brocade',
+    weaveType: 'Pit-Loom Butti Weave',
+    originRegion: 'Chanderi, Madhya Pradesh',
+    weavesDays: 14,
+    price: 16500,
+    originalPrice: 21000,
+    badge: 'Artisanal Essential',
+    rating: 4.9,
+    reviewCount: 23,
+    inStock: true,
+    images: [
+      'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1000&q=85',
+      'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=85'
+    ],
+    sizes: ['38 (S)', '40 (M)', '42 (L)', '44 (XL)', '46 (XXL)'],
+    description: 'A versatile ceremonial waistcoat handloomed in textured honey amber raw silk. Accented with subtle metallic floral motifs, a tailored mandarin collar, welt pockets, and real mother-of-pearl buttons.',
+    artisan: {
+      name: 'Mohammad Rais Ansari',
+      region: 'Madanpura, Varanasi',
+      generation: '4th Generation Weaver',
+      experienceYears: 34,
+      specialty: 'Brocade Bundis & Textured Raw Silk',
+      story: 'Raw silk has an organic, grainy luster that catches festive chandelier lights like nothing else.',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80'
+    },
+    fabricDetails: [
+      '100% Pure Matka Raw Silk with natural slub texture',
+      'Pure brass buttons coated in antique gold lacquer',
+      'Breathable bemberg lining for cool comfort through festive hours',
+      'Hand-finished chest welt pocket with complimentary silk pocket square'
+    ],
+    craftTechnique: 'Handloom pit-loom weaving with handcrafted button loops and bound buttonholes.',
+    careInstructions: [
+      'Dry clean only',
+      'Cool iron with pressing cloth'
+    ],
+    stylingTips: 'Layer over a crisp ivory or sand-gold mulmul kurta for Haldi, Mehendi, or Diwali festivities.',
+    reviews: [
+      {
+        id: 'r-18',
+        author: 'Nikhil Kashyap',
+        location: 'Chandigarh',
+        rating: 5,
+        date: '3 weeks ago',
+        comment: 'Color is stunning in daylight and under warm evening lighting. High quality raw silk with rich feel.',
+        verified: true,
+        outfitBought: 'Amber Meenakari Brocade Nehru Bundi'
       }
     ]
   }
